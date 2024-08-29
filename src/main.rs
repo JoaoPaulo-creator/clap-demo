@@ -7,9 +7,8 @@ struct Args {
     name: String,
 
     #[arg(short, long, default_value_t = 1)]
-    count: u16,
+    count: u32,
 }
-
 
 fn main() {
     let args = Args::parse();
